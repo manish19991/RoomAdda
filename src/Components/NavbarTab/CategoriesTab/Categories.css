@@ -1,0 +1,126 @@
+.cateContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.cateHead {
+  font-size: 25px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+}
+.catePara {
+  font-size: 23px;
+  font-weight: lighter;
+  color: gray;
+  width: 60%;
+  gap: 1px;
+}
+.cateHr {
+  width: 90px;
+  height: 1.8px;
+  background-color: #1e69b8;
+}
+
+.categoriesContent {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 12px;
+
+}
+.categoriesBar{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cateName {
+ font-size: 20px;
+ font-weight: 500;
+}
+.cateImg {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.cateText {
+  font-size: 20px;
+  font-weight: 400;
+  /* color:gray; */
+  /* width: 70%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  color: #000;
+  text-decoration: none;
+}
+.iconTab2{
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  color: rgb(157, 92, 92);
+}
+
+@media only screen and (max-width: 600px){
+
+  .cateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .cateHead {
+    font-size: 22px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+  }
+  .catePara {
+    font-size: 18px;
+    font-weight: lighter;
+    color: gray;
+    width: 90%;
+    gap: 1px;
+  }
+  .cateHr {
+    width: 90px;
+    height: 1.8px;
+    background-color: #1e69b8;
+  }
+  
+  .categoriesContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .cateName {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+  .cateImg {
+    height: 150px;
+  }
+  
+  .cateText {
+    font-size: 20px;
+    font-weight: 400;
+    /* color:gray; */
+    /* width: 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1px; */
+    margin-bottom: 5px;
+  }
+  .iconTab{
+    width: 50px;
+    height: 80px;
+    margin-left: 10px;
+    color: rgb(157, 92, 92);
+  }
+}

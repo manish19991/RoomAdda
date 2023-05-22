@@ -1,0 +1,134 @@
+.bannerContainer {
+  /* margin-top: 60px; */
+  position: relative;
+  background-color: #000;
+}
+.bannerContainer::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+ 
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 1;
+  /* background:       url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center; */
+  background-size:contain;
+}
+.bannerImg {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  opacity: 0.5;
+}
+.bannerTextBar {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  /* margin-left: 50px; */
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.bannerText {
+  font-size: 60px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.bannerPara {
+  font-size: 23px;
+  font-weight: 400;
+  width: 70%;
+  gap: 0.5px;
+}
+
+.readBtn{
+
+  border: 1px solid white;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 40px;
+  position: absolute;
+  top: 340px;
+  left: 500px;
+  color: #fff;
+}
+.btnText{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px){
+  .bannerContainer {
+    margin-top:0px;
+    position: relative;
+    background-color: #000;
+    width: 100%;
+  }
+  .bannerImg {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    opacity: 0.5;
+  }
+  .bannerContainer::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    /* background:       url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center; */
+    background-size:contain;
+  }
+  .bannerTextBar {
+    position: absolute;
+    top: 20px;
+    /* margin-left: 50px; */
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+  }
+  .bannerText {
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  .bannerPara {
+    font-size: 17px;
+    font-weight: 400;
+    width: 70%;
+    gap: 0.5px;
+  }
+  
+  .readBtn{
+  
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .btnText{
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
